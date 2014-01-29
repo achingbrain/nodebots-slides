@@ -28,6 +28,80 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style type="text/css">
+
+.johnny_five body {
+	background: url(img/johnny-five.png) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.johnny_five .reveal h2, .johnny_five .reveal p {
+	color: #FFF;
+	background: #F10;
+	padding: 5px;
+}
+
+.haters body {
+	background: url(img/haters.gif) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.nodejs body {
+	background: url(img/nodejs.png) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.nodejs h2, .nodejs p {
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.warning body {
+	background: url(img/danger.png) no-repeat #ffe800;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	-o-background-size: auto 100%;
+	background-size: auto 100%;
+	background-position: center; 
+}
+.warning h2 {
+	color: #F10;
+	font-size: 260px;
+}
+
+.hardware_is_hard body {
+	background: url(img/johnny-5-is-hard.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.hardware_is_hard h2, .hardware_is_hard p {
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cowboys body {
+	background: url(img/johnny-5-is-cowboy.png) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.cowboys h2, .cowboys p {
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+		</style>
 	</head>
 
 	<body>
@@ -48,33 +122,37 @@
 					<p>NodeBots!</p>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						What is a nodebot?
 					</aside>
 				</section>
 
-				<section>
+				<section data-state="johnny_five">
 					<h2>What's a NodeBot?</h2>
 					<p><span class="fragment">node.js</span><span class="fragment"> + </span><span class="fragment">robots</span></p>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						Nodebots are robots powered by JavaScript
 					</aside>
 				</section>
 
 				<section>
-					<img width="100%" height="100%" src="img/arduino.jpg" alt="Meny">
+					<img width="100%" height="100%" src="img/arduino.jpg">
+
+					<aside class="notes">
+						A
+					</aside>
 				</section>
 
 				<section>
-					<img width="100%" height="100%" src="img/raspberry-pi.jpg" alt="Meny">
+					<img width="100%" height="100%" src="img/raspberry-pi.jpg">
 				</section>
 
 				<section>
-					<img width="100%" height="100%" src="img/beaglebone.jpg" alt="Meny">
+					<img width="100%" height="100%" src="img/beaglebone.jpg">
 				</section>
 
 				<section>
-					<img width="100%" height="100%" src="img/build.jpg" alt="Meny">
+					<img width="100%" height="100%" src="img/build.jpg">
 				</section>
 
 				<section>
@@ -82,7 +160,9 @@
 				</section>
 
 				<section>
-					<img width="100%" height="100%" src="img/nodecopter-logo.png" alt="Meny">
+					<h2>NodeCopters</h2>
+					<img width="400" height="400" src="img/nodecopter-logo.png" alt="Meny">
+					<p>Are flight capable NodeBots</p>
 				</section>
 
 				<section>
@@ -120,33 +200,27 @@
 					<p class="fragment">Isn't it just for web pages?</p>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						
 					</aside>
+				</section>
+
+				<section data-state="haters">
 				</section>
 
 				<section>
 					<h2>JavaScript</h2>
 					<p class="fragment">Lightweight</p>
 					<p class="fragment">Easy to pick up</p>
-					<p class="fragment">Fast turnaround</p>
+					<p class="fragment">Fast feedback</p>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						<ul>
+							<li>No compilation</li>
+						</ul>
 					</aside>
 				</section>
 
-				<section>
-					<h2>Hardware</h2>
-					<p class="fragment">Hard to debug</p>
-					<p class="fragment">Unreliable</p>
-					<p class="fragment">Might just cut your arm off</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
+				<section data-state="nodejs">
 					<h2>Node.js</h2>
 					<p class="fragment">Headless JavaScript runtime</p>
 					<p class="fragment">Chrome V8 under the hood</p>
@@ -154,10 +228,58 @@
 					<p class="fragment">C++ modules</p>
 
 					<aside class="notes">
+						<ul>
+							<li>Brawn behind the brain</li>
+							<li>Lightweight</li>
+							<li>Performant</li>
+							<li>Event driven - no threads</li>
+							<li>C++ for low level operations, that lets you control...</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Hardware</h2>
+				</section>
+
+				<section data-state="warning">
+					<h2>WARNING!</h2>
+				</section>
+
+				<section data-state="hardware_is_hard">
+					<h2>Hardware is hard</h2>
+					<p class="fragment">Hard to debug</p>
+					<p class="fragment">Unreliable</p>
+					<p class="fragment">Might just cut your arm off</p>
+
+					<aside class="notes">
+						Ho ho.
+					</aside>
+				</section>
+
+				<section data-state="cowboys">
+					<h2>The normal rules do not apply</h2>
+					<p>(Good luck with those unit tests)</p>
+
+					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
 				</section>
 
+				<section>
+					<h2>Reality has a terrible API</h2>
+					<ul>
+						<li>Motors move too much</li>
+						<li>Servos don't move enough</li>
+						<li>Sometimes you have to add $FUDGE_FACTOR<sup>*</sup></li>
+					</ul>
+					<br />
+					<br />
+					<br />
+					<small>* = $FUDGE_FACTOR === 5, fact.</small>
+				</section>
+
+				
 				<section>
 					<h2>Nodeboteers</h2>
 					<div class="fragment" width="30%" style="display: inline-block; margin-right: 20px">
