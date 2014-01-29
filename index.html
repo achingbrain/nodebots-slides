@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>NodeBots, assemble!</title>
+
+		<meta name="description" content="A small presentation on JavaScript robotics">
+		<meta name="author" content="Alex Potsides">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>The Rise of<br />JavaScript Robotics</h1>
+					<h3>Or</h3>
+					<h2>I for one welcome our<br />new robot overlords</h2>
+					<p><small>Created by <a href="http://github.com/achingbrain">Alex Potsides</a> / 9425778 / <a href="http://twitter.com/achingbrain">@achingbrain</a></small></p>
+				</section>
+
+				<section>
+					<h2>WAT?</h2>
+					<p>NodeBots!</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>What's a NodeBot?</h2>
+					<p><span class="fragment">node.js</span><span class="fragment"> + </span><span class="fragment">robots</span></p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<img width="100%" height="100%" src="img/arduino.jpg" alt="Meny">
+				</section>
+
+				<section>
+					<img width="100%" height="100%" src="img/raspberry-pi.jpg" alt="Meny">
+				</section>
+
+				<section>
+					<img width="100%" height="100%" src="img/beaglebone.jpg" alt="Meny">
+				</section>
+
+				<section>
+					<img width="100%" height="100%" src="img/build.jpg" alt="Meny">
+				</section>
+
+				<section>
+					<img width="100%" height="100%" src="img/maxresdefault.jpg" alt="Meny">
+				</section>
+
+				<section>
+					<img width="100%" height="100%" src="img/nodecopter-logo.png" alt="Meny">
+				</section>
+
+				<section>
+					<img width="100%" height="100%" src="img/nodecopter.jpg" alt="Meny">
+				</section>
+
+				<section>
+					<img width="100%" height="100%" src="img/crazyflie.jpg" alt="Meny">
+				</section>
+
+				<section>
+					<h2>NodeCopter</h2>
+					<ul>
+						<li class="fragment">Flying WiFi hotspot</li>
+						<li class="fragment">REST interface</li>
+						<li class="fragment">Can access camera data</li>
+					</ul>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<video width="100%" height="100%" src="video/substack.mp4" controls>
+				</section>
+
+				<section>
+					<video width="100%" height="100%" src="video/military.mp4" controls>
+				</section>
+
+				<section>
+					<h2>JavaScript, SRSLY?!</h2>
+					<p>I though that was just a toy language.</p>
+					<p class="fragment">Isn't it just for web pages?</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>JavaScript</h2>
+					<p class="fragment">Lightweight</p>
+					<p class="fragment">Easy to pick up</p>
+					<p class="fragment">Fast turnaround</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Hardware</h2>
+					<p class="fragment">Hard to debug</p>
+					<p class="fragment">Unreliable</p>
+					<p class="fragment">Might just cut your arm off</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Node.js</h2>
+					<p class="fragment">Headless JavaScript runtime</p>
+					<p class="fragment">Chrome V8 under the hood</p>
+					<p class="fragment">Event driven, non-blocking IO</p>
+					<p class="fragment">C++ modules</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Nodeboteers</h2>
+					<div class="fragment" width="30%" style="display: inline-block; margin-right: 20px">
+						<img src="img/chris-williams.jpg" width="100%" />
+						<p>Chris Williams</p>
+						<p><a href="http://wwww.twitter.com/voodootikigod">@voodootikigod</a></p>
+						<p>node-serialport</p>
+					</div>
+					<div class="fragment" width="30%" style="display: inline-block; margin-right: 20px">
+						<img src="img/julian-gautier.jpg" width="100%" />
+						<p>Julian Gautier</p>
+						<p><a href="http://wwww.twitter.com/jagautier">@jagautier</a></p>
+						<p>node-firmata</p>
+					</div>
+					<div class="fragment" width="30%" style="display: inline-block">
+						<img src="img/rick-waldron.jpg" width="100%" />
+						<p>Rick Waldron</p>
+						<p><a href="http://wwww.twitter.com/rwaldron">@rwaldron</a></p>
+						<p>johnny-five</p>
+					</div>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<img width="500" height="500" src="img/nodebots.png" alt="Meny">
+				</section>
+
+				<section>
+					<img width="800" src="img/nodebotsday.jpg" alt="Meny">
+					<p>27th July 2013</p>
+				</section>
+
+				<section>
+					<video width="100%" height="100%" src="video/nodebotsday.mp4" controls>
+				</section>
+
+				<section data-background="#000">
+					<h1>Demo!</h1>
+				</section>
+
+				<section>
+					<h2>Great!</h2>
+					<p>So I can move a servo and turn some LEDs on.</p>
+					<p>Now what?</p>
+				</section>
+
+				<section>
+					<video width="100%" height="100%" src="video/cat-happy.mp4" autoplay loop>
+				</section>
+
+				<section>
+					<img width="700" height="550" src="img/cat-inside.jpg">
+				</section>
+
+				<section>
+					<img width="700" height="550" src="img/cat-skin.jpg">
+				</section>
+
+				<section>
+					<img width="550" height="700" src="img/cat-closeup.jpg">
+				</section>
+
+				<section>
+					<video width="100%" height="100%" src="video/cat-demo.mp4" controls>
+				</section>
+
+				<section>
+					<h2>Build Cat does the conference circuit</h2>
+					<img width="700" height="500" src="img/cat-celebrity.jpg">
+					<p>Full Frontal, 2013</p>
+				</section>
+
+				<section>
+					<h2>What else?</h2>
+					<p class="fragment">All this talking makes me thirsty</p>
+				</section>
+
+				<section>
+					<img width="500" height="700" src="img/barbara.png">
+				</section>
+
+				<section>
+					<h2>B.A.R.B.A.R.A.</h2>
+					<p class="fragment">Build A Robot, Brew A Real Ale</p>
+					<p class="fragment">A micro-services approach</p>
+				</section>
+
+				<section>
+					<h2>The idea</h2>
+					<p class="fragment">Constant temperature key to repeatable brew</p>
+					<p class="fragment">Measure temperature</p>
+					<p class="fragment">Constant temperature adjustments</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Hardware</h2>
+					<p class="fragment">Rasperry-Pi</p>
+					<p class="fragment">BeagleBone Black</p>
+					<p class="fragment">2x Arduinos</p>
+					<p class="fragment">Temperature Sensor</p>
+					<p class="fragment">Aquarium Heater</p>
+				</section>
+
+				<section>
+					<img width="700" height="550" src="img/brew-vessels.jpg">
+				</section>
+
+				<section>
+					<img width="700" height="550" src="img/ban-marie.jpg">
+				</section>
+
+				<section>
+					<img width="700" height="550" src="img/brewbot.jpg">
+				</section>
+
+				<section>
+					<h2>Micro services</h2>
+					<p>Single-responsibility processes</p>
+					<ul>
+						<li class="fragment">Temperature sensor</li>
+						<li class="fragment">Heater</li>
+						<li class="fragment">Database</li>
+						<li class="fragment">Twitter</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Twitter</h2>
+					<img width="700" height="400" src="img/barbara-twitter.jpg">
+				</section>
+
+				<section>
+					<img width="700" height="700" src="img/beer.jpg">
+				</section>
+
+				<section>
+					<h2>NodeBots of London</h2>
+					<p>Monthly meetup hosted by <a href="http://www.uswitch.com/">uSwitch</a> and <a href="http://tableflip.io">TableFlip</a></p>
+					<p class="fragment">Next meetup: 26th February</p>
+					<p class="fragment"><a href="http://www.meetup.com/NodeBots-of-London">http://www.meetup.com/NodeBots-of-London</a></p>
+				</section>
+
+				<section>
+					<h1>The End</h1>
+					<ul>
+						<li><a href="https://github.com/rwaldron/johnny-five">https://github.com/rwaldron/johnny-five</a></li>
+						<li><a href="https://github.com/achingbrain/build-cat">https://github.com/achingbrain/build-cat</a></li>
+						<li><a href="https://github.com/achingbrain/barbara">https://github.com/achingbrain/barbara</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<video width="100%" height="100%" src="video/cat-angry.mp4" autoplay loop>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
