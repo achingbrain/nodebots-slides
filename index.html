@@ -119,92 +119,193 @@
 
 				<section>
 					<h2>WAT?</h2>
-					<p>NodeBots!</p>
+					<p class="fragment">NodeBots!</p>
 
 					<aside class="notes">
-						What is a nodebot?
+						<ul>
+							<li>JavaScript Robotics? I hear you say</li>
+							<li>What is this madness?</li>
+						</ul>
 					</aside>
 				</section>
 
 				<section data-state="johnny_five">
 					<h2>What's a NodeBot?</h2>
-					<p><span class="fragment">node.js</span><span class="fragment"> + </span><span class="fragment">robots</span></p>
+					<p class="fragment">
+						<span class="fragment">node.js</span>
+						<span class="fragment">+ serial port</span>
+						<span class="fragment">+ firmata</span>
+						<span class="fragment">+ johnny-five</span>
+					</p>
 
 					<aside class="notes">
-						Nodebots are robots powered by JavaScript
+						<ul>
+							<li>Nodebots are robots powered by JavaScript</li>
+							<li>Controlled via a virtual serial port</li>
+							<li>Use the firmata protocol</li>
+							<li>Johnny-Five node.js library</li>
+							<li>Built with esoteric hardware, such as...</li>
+						</ul>
 					</aside>
 				</section>
 
 				<section>
+					<h3>Arduino</h3>
 					<img width="100%" height="100%" src="img/arduino.jpg">
 
 					<aside class="notes">
-						A
+						<ul>
+							<li>Open source electronics prototyping platform</li>
+							<li>Digital and analogue input and output pins</li>
+							<li>Cheap and accessible</li>
+						</ul>
 					</aside>
 				</section>
 
 				<section>
-					<img width="100%" height="100%" src="img/raspberry-pi.jpg">
+					<h3>Arduino IDE</h3>
+					<img width="100%" height="100%" src="img/ide.jpg">
+
+					<aside class="notes">
+						<ul>
+							<li>The lovechild of Processing and Wiring</li>
+							<li>Program in a subset of C</li>
+							<li>Only used to flash Arduino with Firmata</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
-					<img width="100%" height="100%" src="img/beaglebone.jpg">
+					<h3>Firmata</h3>
+					<img width="100%" height="100%" src="img/firmata.jpg">
+
+					<aside class="notes">
+						<ul>
+							<li>Protocol and firmware for exposing Arduino capabilities to host computer</li>
+							<li>Turn outputs on and off</li>
+							<li>Read from inputs</li>
+							<li>Looks a bit like MIDI</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
-					<img width="100%" height="100%" src="img/build.jpg">
+					<img width="100%" height="100%" src="img/arduino-robot.jpg">
+
+					<aside class="notes">
+						<ul>
+							<li>People build crazy robots</li>
+							<li>Arduino on the back</li>
+							<li>Sonar sensor on the front</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
 					<img width="100%" height="100%" src="img/maxresdefault.jpg" alt="Meny">
+
+					<aside class="notes">
+						<ul>
+							<li>Slightly more sinister</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
 					<h2>NodeCopters</h2>
 					<img width="400" height="400" src="img/nodecopter-logo.png" alt="Meny">
 					<p>Are flight capable NodeBots</p>
-				</section>
-
-				<section>
-					<img width="100%" height="100%" src="img/nodecopter.jpg" alt="Meny">
-				</section>
-
-				<section>
-					<img width="100%" height="100%" src="img/crazyflie.jpg" alt="Meny">
-				</section>
-
-				<section>
-					<h2>NodeCopter</h2>
-					<ul>
-						<li class="fragment">Flying WiFi hotspot</li>
-						<li class="fragment">REST interface</li>
-						<li class="fragment">Can access camera data</li>
-					</ul>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						<ul>
+							<li>A good toy is one that moves under it's own power</li>
+							<li>The best ones fly</li>
+						</ul>
 					</aside>
 				</section>
 
 				<section>
-					<video width="100%" height="100%" src="video/substack.mp4" controls>
+					<img width="100%" height="100%" src="img/nodecopter.jpg" alt="Meny">
+
+					<aside class="notes">
+						<ul>
+							<li>Parot AR Drone - the famous one</li>
+							<li>Fairly big</li>
+						</ul>
+						<ul>
+							<li>Basically a flying WiFi hotspot</li>
+							<li>Closed source firmware (embedded Linux)</li>
+							<li>Open API</li>
+							<li>Can access camera data</li>
+							<li>GPS module</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
-					<video width="100%" height="100%" src="video/military.mp4" controls>
+					<img width="100%" height="100%" src="img/crazyflie.jpg" alt="Meny">
+
+					<aside class="notes">
+						<ul>
+							<li>Other end of the spectrum</li>
+							<li>Crazyflie</li>
+							<li>Fairly small</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<video width="100%" height="100%" src="video/substack.mp4" controls></video>
+					<p><a href="https://github.com/substack/matador-copter">https://github.com/substack/matador-copter</a></p>
+
+					<aside class="notes">
+						<ul>
+							<li>Camera data streamed to host computer</li>
+							<li>Image detection looking for red</li>
+							<li>Make red be in centre of picture</li>
+							<li>Make red bigger</li>
+							<li>(Moves towards it))</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<video width="100%" height="100%" src="video/military.mp4" controls></video>
+
+					<aside class="notes">
+						<ul>
+							<li>JSConf 2013</li>
+							<li>NodeCopter is taken down by nodebot firing rubber bands</li>
+							<li>Interesting how people naturally seem to create something easily appropriated by the military</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
 					<h2>JavaScript, SRSLY?!</h2>
 					<p>I though that was just a toy language.</p>
 					<p class="fragment">Isn't it just for web pages?</p>
+				</section>
+
+				<section>
+					<h3>JavaScript</h3>
+					<img width="100%" src="img/javascript.jpg">
 
 					<aside class="notes">
-						
+						<ul>
+							<li>It's not perfect</li>
+							<li>The "good parts" book is quite short, which I suppose is a good thing</li>
+						</ul>
 					</aside>
 				</section>
 
 				<section data-state="haters">
+
+					<aside class="notes">
+						<ul>
+							<li>Get over it</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -212,6 +313,8 @@
 					<p class="fragment">Lightweight</p>
 					<p class="fragment">Easy to pick up</p>
 					<p class="fragment">Fast feedback</p>
+					<p class="fragment">Incredible community</p>
+					<p class="fragment">Puts the fun in functional</p>
 
 					<aside class="notes">
 						<ul>
@@ -222,7 +325,7 @@
 
 				<section data-state="nodejs">
 					<h2>Node.js</h2>
-					<p class="fragment">Headless JavaScript runtime</p>
+					<p class="fragment">Modern JavaScript runtime</p>
 					<p class="fragment">Chrome V8 under the hood</p>
 					<p class="fragment">Event driven, non-blocking IO</p>
 					<p class="fragment">C++ modules</p>
@@ -230,10 +333,13 @@
 					<aside class="notes">
 						<ul>
 							<li>Brawn behind the brain</li>
-							<li>Lightweight</li>
-							<li>Performant</li>
+							<li>Modern runtime</li>
+							<li>Can use recent language additions without fear of breakage</li>
+							<li>foreach, sealing/frozen objects, property accessors, typed arrays, unsigned integers</li>
+							<li>Chrome V8 is fast</li>
 							<li>Event driven - no threads</li>
-							<li>C++ for low level operations, that lets you control...</li>
+							<li>State can be held in events - avoids a whole class of threading bugs - synchronisation, memory barriers, etc</li>
+							<li>C++ modules for low level operations, that lets you control...</li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +365,7 @@
 
 				<section data-state="cowboys">
 					<h2>The normal rules do not apply</h2>
-					<p>(Good luck with those unit tests)</p>
+					<p>(a multimeter is more useful than a unit test)</p>
 
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
@@ -278,47 +384,7 @@
 					<br />
 					<small>* = $FUDGE_FACTOR === 5, fact.</small>
 				</section>
-
 				
-				<section>
-					<h2>Nodeboteers</h2>
-					<div class="fragment" width="30%" style="display: inline-block; margin-right: 20px">
-						<img src="img/chris-williams.jpg" width="100%" />
-						<p>Chris Williams</p>
-						<p><a href="http://wwww.twitter.com/voodootikigod">@voodootikigod</a></p>
-						<p>node-serialport</p>
-					</div>
-					<div class="fragment" width="30%" style="display: inline-block; margin-right: 20px">
-						<img src="img/julian-gautier.jpg" width="100%" />
-						<p>Julian Gautier</p>
-						<p><a href="http://wwww.twitter.com/jagautier">@jagautier</a></p>
-						<p>node-firmata</p>
-					</div>
-					<div class="fragment" width="30%" style="display: inline-block">
-						<img src="img/rick-waldron.jpg" width="100%" />
-						<p>Rick Waldron</p>
-						<p><a href="http://wwww.twitter.com/rwaldron">@rwaldron</a></p>
-						<p>johnny-five</p>
-					</div>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<img width="500" height="500" src="img/nodebots.png" alt="Meny">
-				</section>
-
-				<section>
-					<img width="800" src="img/nodebotsday.jpg" alt="Meny">
-					<p>27th July 2013</p>
-				</section>
-
-				<section>
-					<video width="100%" height="100%" src="video/nodebotsday.mp4" controls>
-				</section>
-
 				<section data-background="#000">
 					<h1>Demo!</h1>
 				</section>
@@ -330,7 +396,15 @@
 				</section>
 
 				<section>
-					<video width="100%" height="100%" src="video/cat-happy.mp4" autoplay loop>
+					<h3>Build Cat</h3>
+					<video width="100%" height="100%" src="video/cat-happy.mp4" autoplay loop></video>
+					<p>Ptolemy, to his friends</p>
+
+					<aside class="notes">
+						<ul>
+							<li>Patric Moore's cat</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -346,7 +420,7 @@
 				</section>
 
 				<section>
-					<video width="100%" height="100%" src="video/cat-demo.mp4" controls>
+					<video width="100%" height="100%" src="video/cat-demo.mp4" controls></video>
 				</section>
 
 				<section>
@@ -367,17 +441,18 @@
 				<section>
 					<h2>B.A.R.B.A.R.A.</h2>
 					<p class="fragment">Build A Robot, Brew A Real Ale</p>
-					<p class="fragment">A micro-services approach</p>
+					<p class="fragment">A micro-services approach to brewing beer</p>
 				</section>
 
 				<section>
 					<h2>The idea</h2>
-					<p class="fragment">Constant temperature key to repeatable brew</p>
-					<p class="fragment">Measure temperature</p>
-					<p class="fragment">Constant temperature adjustments</p>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						<ul>
+							<li>Constant temperature key to repeatable brew</li>
+							<li>Measure temperature</li>
+							<li>Constant temperature adjustments</li>
+						</ul>
 					</aside>
 				</section>
 
@@ -410,21 +485,84 @@
 						<li class="fragment">Heater</li>
 						<li class="fragment">Database</li>
 						<li class="fragment">Twitter</li>
+						<li class="fragment">Service registry</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Twitter</h2>
+					<h2>Service location</h2>
+					<ul>
+						<li>mDNS - Bonjour/Zeroconf/Avahi</li>
+						<li>Seaport - <a href="https://github.com/substack/seaport">https://github.com/substack/seaport</a></li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>Temperature sensor will know it's monitoring ipa#1 and needs to report the temperature to a database</li>
+							<li>Heater will know it needs the temperature of ipa#1 so will find it on the network</li>
+							<li>Seaport contains which service on which host/port</li>
+							<li>Locate services through Seaport</li>
+							<li>Locate Seaport through mDNS</li>
+							<li>When Seaport goes down and comes back everything reconnects</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Fault tolerance</h2>
+					<p>pm2 - <a href="https://github.com/Unitech/pm2">https://github.com/Unitech/pm2</a></p>
+					
+					<aside class="notes">
+						<ul>
+							<li>Each services has it's own process</li>
+							<li>Each process initialises whatever it needs</li>
+							<li>pm2 keeps processes running</li>
+							<li>Could run clustered if so inclined</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h3>Twitter</h3>
 					<img width="700" height="400" src="img/barbara-twitter.jpg">
 				</section>
 
 				<section>
+					<h3>The finished article</h3>
 					<img width="700" height="700" src="img/beer.jpg">
 				</section>
 
 				<section>
+					<img width="500" height="500" src="img/nodebots.png" alt="Meny">
+				</section>
+
+				<section>
+					<img width="100%" height="100%" src="img/build.jpg">
+
+					<aside class="notes">
+						<ul>
+							<li>People seem to like it</li>
+							<li>People build things</li>
+							<li>Like a bunch of kids with toys</li>
+							<li>Awesome fun</li>
+							<li>No-one really knows what they are doing</li>
+							<li>Everyone learns something new</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<img width="800" src="img/nodebotsday.jpg" alt="Meny">
+					<p>27th July 2013</p>
+				</section>
+
+				<section>
+					<video width="100%" height="100%" src="video/nodebotsday.mp4" controls></video>
+				</section>
+
+				<section>
 					<h2>NodeBots of London</h2>
-					<p>Monthly meetup hosted by <a href="http://www.uswitch.com/">uSwitch</a> and <a href="http://tableflip.io">TableFlip</a></p>
+					<p>Monthly meetup hosted at <a href="http://www.uswitch.com/">uSwitch</a> by <a href="http://tableflip.io">TableFlip</a> (and me)</p>
 					<p class="fragment">Next meetup: 26th February</p>
 					<p class="fragment"><a href="http://www.meetup.com/NodeBots-of-London">http://www.meetup.com/NodeBots-of-London</a></p>
 				</section>
@@ -432,14 +570,14 @@
 				<section>
 					<h1>The End</h1>
 					<ul>
-						<li><a href="https://github.com/rwaldron/johnny-five">https://github.com/rwaldron/johnny-five</a></li>
 						<li><a href="https://github.com/achingbrain/build-cat">https://github.com/achingbrain/build-cat</a></li>
 						<li><a href="https://github.com/achingbrain/barbara">https://github.com/achingbrain/barbara</a></li>
 					</ul>
 				</section>
 
 				<section>
-					<video width="100%" height="100%" src="video/cat-angry.mp4" autoplay loop>
+					<video width="100%" height="100%" src="video/cat-angry.mp4" autoplay loop></video>
+					<h3>Any questions, flesh things?</h3>
 				</section>
 
 			</div>
